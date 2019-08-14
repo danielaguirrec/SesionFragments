@@ -6,19 +6,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
-
     <fragment
             android:name="com.edwinacubillos.sesionfragments.SupermanFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            tools:layout="@layout/fragment_superman"
             android:id="@+id/fragment_sup"/>
     <fragment
             android:name="com.edwinacubillos.sesionfragments.BatmanFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            tools:layout="@layout/fragment_flash"
             android:id="@+id/fragment_bat"/>
-
-
 </LinearLayout>

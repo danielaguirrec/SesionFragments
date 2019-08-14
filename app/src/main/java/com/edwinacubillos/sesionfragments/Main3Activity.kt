@@ -66,6 +66,7 @@ class Main3Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+
         val manager = supportFragmentManager
         val transaction = manager.beginTransaction()
 
@@ -83,6 +84,7 @@ class Main3Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
                 transaction.replace(R.id.contenedor, flashFragment).commit()
             }
         }
+
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         drawerLayout.closeDrawer(GravityCompat.START)
         return true

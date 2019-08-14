@@ -14,6 +14,5 @@ class Main2Activity : AppCompatActivity() {
 
         val supermanFragment = SupermanFragment()
         transaction.add(R.id.contenedor, supermanFragment).commit()
-
     }
 }
