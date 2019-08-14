@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_superman"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/superman"/>
+
+    <item
+            android:id="@+id/navigation_batman"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/batman"/>
+
+    <item
+            android:id="@+id/navigation_flash"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/flash"/>
+
+</menu>
