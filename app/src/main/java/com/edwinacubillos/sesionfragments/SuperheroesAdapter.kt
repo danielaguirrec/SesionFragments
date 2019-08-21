@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.edwinacubillos.sesionfragments.Superheroes
 import kotlinx.android.synthetic.main.superheroes_item.view.*
@@ -32,11 +33,19 @@ class SuperheroesAdapter : RecyclerView.Adapter<SuperheroesAdapter.SuperheroesVi
         holder.loadItem(superheroes)
     }
 
-    class SuperheroesViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView){
+    class SuperheroesViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+
+        init {
+            itemView.setOnClickListener(this)
+        }
 
         fun loadItem(superheroes: Superheroes){
             itemView.tNombre.text = superheroes.nombre
             itemView.iFoto.setImageResource(superheroes.foto)
+        }
+
+        override fun onClick(v: View?) {
+
         }
     }
 }
