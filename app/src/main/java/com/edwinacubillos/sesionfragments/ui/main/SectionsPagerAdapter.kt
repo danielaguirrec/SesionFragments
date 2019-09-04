@@ -4,10 +4,7 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.edwinacubillos.sesionfragments.BatmanFragment
-import com.edwinacubillos.sesionfragments.FlashFragment
-import com.edwinacubillos.sesionfragments.R
-import com.edwinacubillos.sesionfragments.SupermanFragment
+import com.edwinacubillos.sesionfragments.*
 
 private val TAB_TITLES = arrayOf(
     R.string.superman,
@@ -17,12 +14,18 @@ private val TAB_TITLES = arrayOf(
 
 class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
+    fun getUserData(userList: ArrayList<User>){
+        this.userList = userList
+    }
+
+    private var userList: ArrayList<User> = ArrayList()
+
     override fun getItem(position: Int): Fragment {
 
         when (position){
-            0 -> return SupermanFragment()
+            0 -> return FormFragment()
             1 -> return BatmanFragment()
-            else -> return FlashFragment()
+            else -> return DatosFragment.newInstance(userList)
         }
     }
 

@@ -3,6 +3,8 @@ package com.edwinacubillos.sesionfragments
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+//Envío de datos entre fragments
+
 class Main6Activity : AppCompatActivity(), comunicador  {
 
     override fun onCreate(savedInstanceState: Bundle?) {

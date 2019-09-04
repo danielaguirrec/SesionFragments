@@ -3,6 +3,8 @@ package com.edwinacubillos.sesionfragments
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+//Fragmentos Dinámicos
+
 class Main2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

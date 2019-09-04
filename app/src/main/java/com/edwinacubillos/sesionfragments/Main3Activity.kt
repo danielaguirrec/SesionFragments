@@ -10,6 +10,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
+//Navigatio Drawer
+
 class Main3Activity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
 

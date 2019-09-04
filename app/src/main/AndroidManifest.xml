@@ -10,11 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".Main6Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".ListaActivity">
 
@@ -23,20 +19,23 @@
                 android:name=".Main5Activity"
                 android:label="@string/title_activity_main5"
                 android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity
-                android:name=".Main4Activity"
-                android:label="@string/title_activity_main4">
-        </activity>
-        <activity
-                android:name=".Main3Activity"
-                android:label="@string/title_activity_main3"
-                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
+        </activity>
+        <activity
+                android:name=".Main4Activity"
+                android:label="@string/title_activity_main4">
+
+        </activity>
+        <activity
+                android:name=".Main3Activity"
+                android:label="@string/title_activity_main3"
+                android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity android:name=".Main2Activity">
         </activity>
